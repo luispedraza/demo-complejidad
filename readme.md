@@ -1,4 +1,4 @@
-Informe de complejidad con [complexity-remport](https://github.com/escomplex/complexity-report)
+Informe de complejidad con [complexity-report](https://github.com/escomplex/complexity-report)
 ================================================================================================================
 
 Mean per-function logical LOC: 4.875
