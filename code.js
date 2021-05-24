@@ -1,40 +1,37 @@
 function foo (){
-    return 1;
+    console.log("foo");
 }
 function bar () {
-    return 2;
+    console.log("bar");
 }
 
 function buzz() {
-    return 3;
+    console.log("buzz");
 }
 
 function fynn() {
-    return 4;
+    console.log("fynn");
 }
 
 function def () {
-    return 5;
+    console.log("default");
 }
 
 function f_if(a) {
-    let v = 1;
     if (a === "foo") {
-        v = foo();
+        foo();
     } else if (a == "bar") {
-        v = bar();
+        bar();
     }else if (a == "buzz") {
-        v = buzz();
+        buzz();
     }else if (a == "fynn") {
-        v = fynn();
+        fynn();
     }else  {
-        v = def();
+        def();
     }
-    console.log(v);
 }
 
 function f_switch(a) {
-    let v = 1;
     switch (a) {
         case "foo":
             foo();
@@ -51,13 +48,11 @@ function f_switch(a) {
         default:
             def();
     }
-    console.log(v);
 }
 
 function f_obj(a) {
-    let v = 1;
-    const lookup = {"foo": foo, "bar": bar, "buzz": buzz, "fynn": fynn};
-    v = lookup[a] ? lookup[a]() : def();
-    console.log(v);
+    let lookup = {"foo": foo, "bar": bar, "buzz": buzz, "fynn": fynn};
+    lookup[a] ? lookup[a]() : def();
 }
 
+f_obj("bar");
