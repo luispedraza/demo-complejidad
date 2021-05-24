@@ -1,3 +1,5 @@
+Informe de complejidad con [complexity-remport](https://github.com/escomplex/complexity-report)
+
 Physical LOC: 56
   Logical LOC: 47
   Mean parameter count: 0
